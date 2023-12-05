@@ -31,7 +31,7 @@ jobs:
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: spring-weather-prediction
+          name: string-reply
           path: |
             build/libs/*.jar
 
