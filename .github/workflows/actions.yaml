@@ -43,6 +43,6 @@ jobs:
 
       - name: Docker Build and Push to DockerHub
         run: |
-          docker build -t pvkr/string-reply:${{github.ref_name}}-${{github.sha}} -t pvkr/spring-weather-prediction:latest .
+          docker build -t pvkr/string-reply:${{github.ref_name}}-${{github.sha}} -t pvkr/string-reply:latest .
           docker push pvkr/string-reply:${{github.ref_name}}-${{github.sha}}
           docker push pvkr/string-reply:latest
